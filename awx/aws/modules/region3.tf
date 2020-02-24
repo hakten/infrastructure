@@ -22,6 +22,12 @@ resource "aws_instance" "worker3" {
   associate_public_ip_address = "true"
   key_name                    = "${var.key_name}"
   security_groups             = ["allow_ssh_and_awx"]
+  
+  tags = {
+    Name = "Worker 3"
+  } 
+  
+  
   provisioner "file" {
     source      = "/root/.ssh"
     destination = "/tmp/"
