@@ -24,10 +24,10 @@ resource "aws_route53_record" "worker2" {
   records = ["${aws_instance.worker2.public_ip}"]
 }
 
-resource "aws_route53_record" "worker3" {
-  zone_id = "${var.zone_id}"
-  name    = "worker3.${var.domain}"   
-  type    = "A"
-  ttl     = "60"
-  records = ["${aws_instance.worker3.public_ip}"]
-}
+# resource "aws_route53_record" "worker3" {
+#   zone_id = "${var.zone_id}"
+#   name    = "worker3.${var.domain}"   
+#   type    = "A"
+#   ttl     = "60"
+#   records = ["${aws_instance.worker3.public_ip}"]
+# }
