@@ -10,7 +10,7 @@ data "aws_ami" "centos-region2" {
 
   filter {
     name   = "name"
-    values = ["CentOS Linux 7 x86_64 HVM EBS *"]
+    values = ["CentOS Linux 7 x86_64 HVM EBS ENA 1901_01-b7*"]
   }
 }
 
