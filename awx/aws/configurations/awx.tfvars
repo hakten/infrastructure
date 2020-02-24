@@ -1,5 +1,5 @@
 # Below code is used to set backend only
-s3_bucket                       =	"acirrustech-iaac"
+s3_bucket                       =	"t-s3-backend"
 s3_folder_region                =	"us-east-1"
 
 # Change to any region to work, in my case default region ireland
